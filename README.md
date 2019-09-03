@@ -1,8 +1,11 @@
 # CREATE-REACT-COMPONENT
 
-### Generatos directory for React component
+### Generats directory for React component
 
+. 
 Forked from https://github.com/olehvolynets/create-react-component and edited to fill my needs.
+
+
 Filled with starter template, has options for **Pure** and **Functional** components
 
 In the end you get a directory that looks like this:

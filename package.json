@@ -3,7 +3,7 @@
   "displayName": "create-react-component",
   "description": "Util made to quickly create folder with React component, its styles file and index file",
   "author": "Alex Lario",
-  "publisher": "alekslario",
+  "publisher": "AleksandrsLarionovs",
   "version": "0.1.0",
   "engines": {
     "vscode": "^1.30.0"
