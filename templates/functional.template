@@ -1,20 +1,13 @@
 'use strict';
-// @flow
 import React from 'react';
-import PropTypes from 'prop-types';
+import Styled from "./styled";
 
-const {componentName} = props => (
-  <div className="{componentName}-wrapper">
-    Test content
-  </div>
-);
-
-{componentName}.PropTypes = {
-
+const {componentName} = _ => { 
+  return (
+    <React.Fragment>
+      Test content
+    </React.Fragment>
+  )
 }
-
-{componentName}.defaultProps = {
-
-} 
 
 export default {componentName};

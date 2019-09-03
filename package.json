@@ -1,9 +1,9 @@
 {
-  "name": "create-react-component",
+  "name": "create-react-component-vol-two",
   "displayName": "create-react-component",
-  "description": "Util made to quickly create folder with React component, its styles file and test file",
-  "author": "Oleh Volynets",
-  "publisher": "olehvolynets",
+  "description": "Util made to quickly create folder with React component, its styles file and index file",
+  "author": "Alex Lario",
+  "publisher": "alekslario",
   "version": "0.1.0",
   "engines": {
     "vscode": "^1.30.0"
@@ -59,6 +59,7 @@
     "@types/node": "^8.10.25",
     "eslint": "^4.11.0",
     "typescript": "^3.1.4",
+    "vsce": "^1.66.0",
     "vscode": "^1.1.28"
   },
   "dependencies": {
@@ -66,5 +67,5 @@
     "fs": "0.0.1-security",
     "fs-extra": "^7.0.1"
   },
-  "repository": "https://github.com/Galahatt/create-react-component"
+  "repository": "https://github.com/alekslario/create-react-component-vol-two"
 }

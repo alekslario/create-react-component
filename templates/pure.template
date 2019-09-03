@@ -1,7 +1,7 @@
 'use strict';
-//@flow
+
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import Styled from "./styled";
 
 class {componentName} extends PureComponent { 
   state = {
@@ -42,19 +42,11 @@ class {componentName} extends PureComponent {
       return <h1>Something went wrong.</h1>;
     }
     return (
-      <div className="{componentName}-wrapper">
+      <React.Fragment>
         Test content
-      </div>
+      </React.Fragment>
     );
   }
-}
-
-{componentName}.PropTypes = {
-
-}
-
-{componentName}.defaulsProps = {
-
 }
 
 export default {componentName};

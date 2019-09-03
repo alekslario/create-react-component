@@ -63,9 +63,8 @@ module.exports = {
 
       return this.createFile(filename, componentContent);
     },
-
-    createTestFile: function(componentDir, componentName) {
-      let templateFileName = this.templatesDir + `/test.template`;
+    createIndex: function(componentDir, componentName) {
+      let templateFileName = `${this.templatesDir}/index.template`;
 
       const compName = pascalCase(componentName);
 
@@ -74,37 +73,23 @@ module.exports = {
         .toString()
         .replace(/{componentName}/g, compName);
 
-      let filename = `${componentDir}/${compName}.test.jsx`;
+      let filename = `${componentDir}/index.js`;
 
       return this.createFile(filename, componentContent);
     },
-
-    createPackageJSON: function(componentDir, componentName) {
-      let templateFileName = this.templatesDir + '/package.template';
+    createStyledComponent: function(componentDir, componentName) {
+      let templateFileName = `${this.templatesDir}/styled.template`;
 
       const compName = pascalCase(componentName);
-      let indexContent = fs
+
+      let componentContent = fs
         .readFileSync(templateFileName)
         .toString()
         .replace(/{componentName}/g, compName);
 
-      let filename = `${componentDir}/package.json`;
+      let filename = `${componentDir}/styled.js`;
 
-      return this.createFile(filename, indexContent);
-    },
-
-    createCSS: function(componentDir, componentName) {
-      let templateFileName = `${this.templatesDir}/sass.template`;
-
-      const compName = pascalCase(componentName);
-      let cssContent = fs
-        .readFileSync(templateFileName)
-        .toString()
-        .replace(/{componentName}/g, compName);
-
-      let filename = `${componentDir}/${compName}.sass`;
-
-      return this.createFile(filename, cssContent);
+      return this.createFile(filename, componentContent);
     }
   }
 };
