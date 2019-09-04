@@ -15,3 +15,4 @@ In the end you get a directory that looks like this:
 ---styled.js
 ---index.js
 ```
+![Who made it?!](https://i.imgur.com/4GOE5TM.png)
